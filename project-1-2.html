@@ -46,56 +46,20 @@
             <br>
             <h2>Etude Statistique : Recherche de points influents et atypiques</h2>
             <h3>Contextualisation du projet</h3>
-            <p>Ce projet consiste en la création d'une application Shiny permettant d’analyser les 1000 plus 
-gros streamers de jeux vidéo sur Twitch en 2020. L’application est conçue pour aider les 
-investisseurs à prendre des décisions en identifiant les streamers Twitch qui correspondent à 
-leurs critères d’investissement.</p>
+            <p>Dans cette étude statistique de l’Indice de Masse Grasse (IMG), nous avons identifié des points influents et atypiques dans les observations. L’identification de ces points nous permet de comprendre les patterns et les comportements inhabituels des données, et ainsi d’éviter le biais des résultats de l’étude. Nous avons utilisé deux formules pour calculer l’IMG chez l’adulte : la formule de Brozek et la formule de Siri. Les variables d’intérêt étaient le pourcentage de masse grasse calculé avec ces deux formules (body.fat et body.fat.siri).</p>
 
             <h3>Compétences</h3>
-            <p>Il s’agit d’un projet multi-compétence mettant en jeu 3 compétences (dont la compétence du 
-parcours EMS), aussi bien informatiques que statistiques : 
-- Traiter des données à des fins décisionnelles (compétence 1)
+            <p>Il s’agit d’un projet en jeu 2 compétences statistiques : 
 - Analyser statistiquement des données (compétence 2)
 - Modéliser les données dans un cadre statistique (compétence 4)
 </p>
-            <h4>Traiter des données à des fins décisionnelles (compétence 1)</h4>
-            <p>Pour réaliser ce projet, j’ai développé une application Rshiny. Il s’agit d’une application web 
-interactive développée à l’aide du langage R et du framework Shiny. Ainsi, elle permet de 
-visualiser des résultats de manière interactive. 
-            </p>
-            <p>Tout d’abord, je me suis employé à du brainstorming pour définir l’interface utilisateur (UI). De 
-cette façon, je pouvais réaliser une application innovante respectant le cahier des charges 
-fourni, tout en apportant mes idées personnelles.
-J’ai réalisé 5 onglets (dont 1 avec 2 sous-onglets) qui sont les suivants :
-- Twitch
-- Dashboard
-- Classement
-- Analyse multivariée
-o ACP
-o K-means
-- Données
-</p>
             <h4>Analyser statistiquement des données (compétence 2)</h4>
-            <p>L'analyse univariée consiste à examiner les caractéristiques d'une seule variable à la fois. Ainsi, 
-j’ai créé un premier diagramme en barres verticales qui représente le taux de visionnage des 
-streamers. Ce type de graphique permet de visualiser rapidement la tendance générale. Nous 
-savons tout de suite si un streamer fait mieux que l’autre. De la même manière, j’ai aussi 
-représenté le taux d’engagement des abonnées.
-L’analyse bivariée consiste à examiner plusieurs variables en même temps. J’ai réalisé un 
-diagramme en barres compilés représentant la part de streamer pour chaque langue dans 
-chaque catégorie de visionnage. </p>
+            <p>L'analyse univariée a permis d'examiner la data et la comprendre dans un premier temps, pour mieux modéliser Y, dans un deuxième temps. Après avoir nettoyé les données en calculant l’Indice de Masse Corporelle (IMC) et en supprimant les observations avec des différences, nous avons effectué des analyses descriptives univariées pour détecter les valeurs aberrantes. Les boxplots ont révélé la présence d’observations atypiques, mais nous ne les avons pas supprimées car nous ne savions pas si elles étaient influentes.</p>
             <h4>Modéliser les données dans un cadre statistique (compétence 4)
 </h4>
-            <p>Pour réaliser ce projet, j’ai réalisé une analyse multivariée. C’est une méthode d'analyse 
-statistique qui permet d'étudier simultanément les relations entre plusieurs variables. Les 
-techniques que j’ai utilisées sont l’analyse en composantes principales et la classification.</p>
-            <p>J’ai réalisé un heatmap des corrélations, pour visualiser les variables corrélées entre elles. 
-Ensuite, j’ai séparé les données quantitatives du jeu de données et je les ai standardisé afin de 
-réaliser une analyse en composantes principales. 
-Cette méthode permet de réduire la dimensionnalité d'un ensemble de données en identifiant 
-les combinaisons linéaires des variables originales qui expliquent le mieux la variance des 
-données. Ainsi, l’investisseur peut rapidement visualiser les meilleurs streamers dans un 
-domaine précis.</p>
+            <p>Pour mieux comprendre les observations influentes ou atypiques, nous avons analysé les résidus et leur impact sur les variances et covariances des coefficients du modèle. Nous avons également examiné les ratios de covariance pour évaluer l’impact des observations sur les variances et covariances des paramètres.</p>
+            
+            <p>Après avoir effectué une analyse statistique de l’Indice de Masse Grasse (IMG) en utilisant la formule de Brozek, nous avons construit le modèle de régression linéaire multiple complet pour expliquer la variation de l’IMG en fonction de différentes variables explicatives comprises dans le dataset telles que l’âge, le poids, le cou, l’abdomen, la cuisse, l’avant-bras et le poignet. Nous avons également utilisé différentes méthodes de sélection de variables, telles que la méthode exhaustive et la méthode pas à pas, pour identifier les variables les plus pertinentes dans le modèle. Parmi les modèles retenus, nous avons sélectionné le modèle comprenant le poids, l’abdomen, le poignet et l’avant-bras comme le meilleur modèle final en raison de son ajustement et de l’absence de colinéarité entre les variables. En ce qui concerne la validation du modèle, nous avons effectué un diagnostic des résidus pour vérifier les hypothèses de normalité et d’homoscédasticité. Les résidus semblent suivre une distribution normale et sont uniformément dispersés, ce qui confirme la validité du modèle.</p>
             
         </div>
         <!-- Autre contenu de la page d'accueil -->
