@@ -46,10 +46,8 @@
             <br>
             <h2>Description et prévision de données temporelles</h2>
             <h3>Contextualisation du projet</h3>
-            <p>Ce projet consiste en la création d'une application Shiny permettant d’analyser les 1000 plus 
-gros streamers de jeux vidéo sur Twitch en 2020. L’application est conçue pour aider les 
-investisseurs à prendre des décisions en identifiant les streamers Twitch qui correspondent à 
-leurs critères d’investissement.</p>
+            <p>L'objectif de ce projet est d'analyser une série temporelle de production d'électricité par combustion du charbon entre 2001 et 2021, provenant de l'Agence américaine d'information sur l'énergie (EIA). 
+            L'analyse vise à fournir des prévisions pour guider les décisions d'investissement et les stratégies énergétiques à long terme. Il s'agit d'un projet réalisé à trois, je vais vous présenter les parties que j'ai faites.</p>
 
             <h3>Compétences</h3>
             <p>Il s’agit d’un projet multi-compétence mettant en jeu 3 compétences (dont la compétence du 
@@ -59,43 +57,15 @@ parcours EMS), aussi bien informatiques que statistiques :
 - Modéliser les données dans un cadre statistique (compétence 4)
 </p>
             <h4>Traiter des données à des fins décisionnelles (compétence 1)</h4>
-            <p>Pour réaliser ce projet, j’ai développé une application Rshiny. Il s’agit d’une application web 
-interactive développée à l’aide du langage R et du framework Shiny. Ainsi, elle permet de 
-visualiser des résultats de manière interactive. 
+            <p>J'ai débuté par explorer les caractéristiques temporelles de la série pour identifier les tendances, les variations saisonnières et les fluctuations aléatoires. 
             </p>
-            <p>Tout d’abord, je me suis employé à du brainstorming pour définir l’interface utilisateur (UI). De 
-cette façon, je pouvais réaliser une application innovante respectant le cahier des charges 
-fourni, tout en apportant mes idées personnelles.
-J’ai réalisé 5 onglets (dont 1 avec 2 sous-onglets) qui sont les suivants :
-- Twitch
-- Dashboard
-- Classement
-- Analyse multivariée
-o ACP
-o K-means
-- Données
+            <p>J'ai également détecté les points aberrants et les valeurs manquantes dans les données pour préparer la série pour l'analyse.
 </p>
             <h4>Analyser statistiquement des données (compétence 2)</h4>
-            <p>L'analyse univariée consiste à examiner les caractéristiques d'une seule variable à la fois. Ainsi, 
-j’ai créé un premier diagramme en barres verticales qui représente le taux de visionnage des 
-streamers. Ce type de graphique permet de visualiser rapidement la tendance générale. Nous 
-savons tout de suite si un streamer fait mieux que l’autre. De la même manière, j’ai aussi 
-représenté le taux d’engagement des abonnées.
-L’analyse bivariée consiste à examiner plusieurs variables en même temps. J’ai réalisé un 
-diagramme en barres compilés représentant la part de streamer pour chaque langue dans 
-chaque catégorie de visionnage. </p>
+            <p>J'ai utilisé des techniques statistiques pour modéliser la tendance de la série, telles que les moyennes mobiles et les moyennes annuelles. J'ai également calculé les coefficients saisonniers pour mettre en évidence les variations saisonnières dans la production d'électricité. </p>
             <h4>Modéliser les données dans un cadre statistique (compétence 4)
 </h4>
-            <p>Pour réaliser ce projet, j’ai réalisé une analyse multivariée. C’est une méthode d'analyse 
-statistique qui permet d'étudier simultanément les relations entre plusieurs variables. Les 
-techniques que j’ai utilisées sont l’analyse en composantes principales et la classification.</p>
-            <p>J’ai réalisé un heatmap des corrélations, pour visualiser les variables corrélées entre elles. 
-Ensuite, j’ai séparé les données quantitatives du jeu de données et je les ai standardisé afin de 
-réaliser une analyse en composantes principales. 
-Cette méthode permet de réduire la dimensionnalité d'un ensemble de données en identifiant 
-les combinaisons linéaires des variables originales qui expliquent le mieux la variance des 
-données. Ainsi, l’investisseur peut rapidement visualiser les meilleurs streamers dans un 
-domaine précis.</p>
+            <p>J'ai appliqué la méthode de Holt-Winters pour prévoir la production future d'électricité. Cette méthode suppose une relation entre les observations antérieures et les prévisions futures, en attribuant des poids décroissants aux observations antérieures. Enfin, j'ai comparé les résultats des différentes méthodes de prévision pour sélectionner le modèle le plus approprié, en l'occurrence le modèle ARMA qui a été réalisé par un membre du groupe.</p>
             
         </div>
         <!-- Autre contenu de la page d'accueil -->
