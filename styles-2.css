@@ -1,0 +1,229 @@
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #17183B; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+}
+
+.titre a {
+    text-decoration: none;
+    color: black; 
+    font-size: 20px;
+}
+
+.titre a:hover {
+    color: dodgerblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Couleur de fond du header */
+    color: black; /* Couleur du texte du header */
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto; /* Centrer le contenu horizontalement */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la largeur totale */
+    border-bottom: 1px solid midnightblue;
+}
+
+
+h1 {
+    font-size: 20px !important;
+    color: black !important;
+}
+
+h3 {
+    color: dodgerblue;
+}
+
+footer {
+    text-align: center;
+    background-color: #262322;
+    color: white !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+
+.text-photo {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    margin-right: 20px; /* Ajustez selon vos préférences */
+}
+
+.photo {
+    max-width: 50%;
+    height: auto;
+}
+
+.text-container {
+    flex-grow: 1; /* Pour que le texte occupe tout l'espace restant */
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black; /* Couleur des liens dans le header */
+    transition: color 0.3s; /* Transition pour le changement de couleur au survol */
+}
+
+nav a:hover {
+    color: dodgerblue;
+}
+
+#content {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.fond {
+    width: 100%;
+    text-align: center;
+    color: white; 
+}
+
+    /* Style pour le texte */
+.text-on-image {
+    position: absolute;
+    color: white;
+    top: 50%; /* Position verticale au milieu */
+    left: 50%; /* Position horizontale au milieu */
+    transform: translate(-50%, -50%); /* Centrer le texte */
+    font-size: 70px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+
+}
+
+
+.profile-image {
+    width: 100%;
+    height: auto;
+}
+
+#image-top {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+.text-presentation {
+    text-align: justify;
+}
+
+.each-project {
+    font-size: 18px !important;
+}
+
+#see-project:hover {
+    color: dodgerblue;
+}
+
+#explanation-project:hover {
+    color: seagreen;
+}
+
+/* Ajoutez ces styles à votre feuille de style CSS */
+
+.projets {
+    margin-top: 20px;
+}
+
+.annee-projet {
+    margin-top: 15px;
+}
+
+.projet {
+    margin-top: 10px;
+}
+
+.titre-projet {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.liens-projet a {
+    text-decoration: none;
+    color: #0066cc; /* Couleur du lien */
+}
+
+.liens-projet a:hover {
+    text-decoration: underline;
+}
+
+#presentation-section,
+#projets-section,
+#experience-section,
+#contact-section {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
+.linkedin-logo img {
+    width: 25px; /* Ajustez la taille du logo selon votre préférence */
+    height: auto;
+    border-radius: 18%;/* Pour arrondir les coins du logo */
+}
+
+.github-logo img {
+    width: 25px; /* Ajustez la taille du logo selon votre préférence */
+    height: auto;
+    border-radius: 18%;/* Pour arrondir les coins du logo */
+}
+
+.kaggle-logo img {
+    width: 25px; /* Ajustez la taille du logo selon votre préférence */
+    height: auto;
+    border-radius: 18%;/* Pour arrondir les coins du logo */
+}
+
+.formation-image img {
+    width: 350px; /* Ajustez la taille du logo selon votre préférence */
+    height: auto;
+}
+
+.linkedin-logo img:hover {
+    transform: scale(1.2); /* Agrandit l'icône de 20% */
+}
+
+.github-logo img:hover {
+    transform: scale(1.2); /* Agrandit l'icône de 20% */
+}
+
+.kaggle-logo img:hover {
+    transform: scale(1.2); /* Agrandit l'icône de 20% */
+}
+
+/* ... Autres styles ... */
