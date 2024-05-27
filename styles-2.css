@@ -156,6 +156,10 @@ nav a:hover {
     margin-top: 15px;
 }
 
+.bilan-but-title {
+    color: purple !important;
+}
+
 .projet {
     margin-top: 10px;
 }
