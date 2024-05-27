@@ -179,6 +179,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.lien-but a {
+    text-decoration: none;
+    color: #000000; /* Couleur du lien */
+}
+
+.lien-but a:hover {
+    text-decoration: underline;
+}
+
 #presentation-section,
 #projets-section,
 #experience-section,
