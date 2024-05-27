@@ -180,12 +180,13 @@ nav a:hover {
 }
 
 .lien-but a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #000000; /* Couleur du lien */
 }
 
 .lien-but a:hover {
     color: #0066cc;
+    text-decoration: underline;
 }
 
 #presentation-section,
