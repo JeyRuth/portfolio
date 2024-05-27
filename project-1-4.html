@@ -46,10 +46,14 @@
             <br>
             <h2>Analyse de données : Les facteurs influant la performance au marathon</h2>
             <h3>Contextualisation du projet</h3>
-            <p>Ce projet consiste en la création d'une application Shiny permettant d’analyser les 1000 plus 
-gros streamers de jeux vidéo sur Twitch en 2020. L’application est conçue pour aider les 
-investisseurs à prendre des décisions en identifiant les streamers Twitch qui correspondent à 
-leurs critères d’investissement.</p>
+            <p>Dans le cadre de ce projet, nous avons réalisé de l'analyse de données, su reporting et de la data visualisation sur les données des compétitions d'athlétisme de 2019.
+                Il existe plusieurs disciplines, et parmi celles proposés, notre équipe de 4 étudiants avons choisis d'étudier le marathon.
+                Pour connaître les variables que nous allions conserver, supprimerou créer, il fallait d’abord une idée concrète de notre approche et des pistes d’analyses. C’est pourquoi nous avons jugé convenable de présenter notre problématique et nos idées à cet instant, soit juste après avoir compris une grande partie des variables.
+Problématique : Des facteurs sociodémographiques, météorologiques et géographiques influencent-ils la performance des coureurs ?
+La problématique devrait tourner autour de facteurs qui éveillent des interrogations :
+ - Autour de l’âge : court-on mieux si l’on est plus âgés et inversement ? - Par rapport au club : l’appartenance à un club a-t-elle une influence sur les performances (temps) ou non du coureur ? - Autour des conditions météorologiques : la température, la force du vent, l’humidité, la visibilité et la couverture nuageuse.
+Aussi, nous songeons à étudier la population en deux temps pour ne pas fausser les résultats liés aux différences homme/femme au niveau des performances. Donc il y aurait une population masculine, une féminine, et une mixte qui reste à ce jour temporaire. 
+            </p>
 
             <h3>Compétences</h3>
             <p>Il s’agit d’un projet multi-compétence mettant en jeu 3 compétences (dont la compétence du 
@@ -59,43 +63,43 @@ parcours EMS), aussi bien informatiques que statistiques :
 - Modéliser les données dans un cadre statistique (compétence 4)
 </p>
             <h4>Traiter des données à des fins décisionnelles (compétence 1)</h4>
-            <p>Pour réaliser ce projet, j’ai développé une application Rshiny. Il s’agit d’une application web 
-interactive développée à l’aide du langage R et du framework Shiny. Ainsi, elle permet de 
-visualiser des résultats de manière interactive. 
+            <p>Pour réaliser ce projet, nous avons utilisé R et Rmd afin de coder et sortir nos résultats sous forme de rapport. J'ai réalisé des opérations de nettoyage, de recodage et de traitement des données. J'ai manipulé plusieurs types de données dont les vecteurs afin d'affecter de nouveaux noms, par exemple. 
+                Ma partie consistait surtout à étudier les facteurs météorologiques et géologiques, donc j'ai réalisé dans un premier temps de la collecte de données afin d'avoir les conditions météorologiques correspondant à chaque candidat. Ensuite, j'ai réalisé des jointures grâce à la fonction merge() pour réaliser des analyses statistiques sur la base complète.
             </p>
-            <p>Tout d’abord, je me suis employé à du brainstorming pour définir l’interface utilisateur (UI). De 
-cette façon, je pouvais réaliser une application innovante respectant le cahier des charges 
-fourni, tout en apportant mes idées personnelles.
-J’ai réalisé 5 onglets (dont 1 avec 2 sous-onglets) qui sont les suivants :
-- Twitch
-- Dashboard
-- Classement
-- Analyse multivariée
-o ACP
-o K-means
-- Données
-</p>
+            
             <h4>Analyser statistiquement des données (compétence 2)</h4>
-            <p>L'analyse univariée consiste à examiner les caractéristiques d'une seule variable à la fois. Ainsi, 
-j’ai créé un premier diagramme en barres verticales qui représente le taux de visionnage des 
-streamers. Ce type de graphique permet de visualiser rapidement la tendance générale. Nous 
-savons tout de suite si un streamer fait mieux que l’autre. De la même manière, j’ai aussi 
-représenté le taux d’engagement des abonnées.
-L’analyse bivariée consiste à examiner plusieurs variables en même temps. J’ai réalisé un 
-diagramme en barres compilés représentant la part de streamer pour chaque langue dans 
-chaque catégorie de visionnage. </p>
-            <h4>Modéliser les données dans un cadre statistique (compétence 4)
-</h4>
-            <p>Pour réaliser ce projet, j’ai réalisé une analyse multivariée. C’est une méthode d'analyse 
-statistique qui permet d'étudier simultanément les relations entre plusieurs variables. Les 
-techniques que j’ai utilisées sont l’analyse en composantes principales et la classification.</p>
-            <p>J’ai réalisé un heatmap des corrélations, pour visualiser les variables corrélées entre elles. 
-Ensuite, j’ai séparé les données quantitatives du jeu de données et je les ai standardisé afin de 
-réaliser une analyse en composantes principales. 
-Cette méthode permet de réduire la dimensionnalité d'un ensemble de données en identifiant 
-les combinaisons linéaires des variables originales qui expliquent le mieux la variance des 
-données. Ainsi, l’investisseur peut rapidement visualiser les meilleurs streamers dans un 
-domaine précis.</p>
+            <p>J'ai réalisé des statistiques de base pour évaluer mes variables. Ensuite j'ai réalisé les graphiques suivants : </p>
+            <p>- Boxplot du temps selon la température</p>
+            <p>- Courbe du temps moyen selon la température</p>
+            <p>- Participation des coureurs selon les saisons</p>
+            <p>- Nombre de participations selon les régions</p>
+            <p>- Temps moyen selon les régions</p>
+
+            <p>Ensuite, j'ai analysé chaque graphique et réalisé des tests pour identifier des relations entre des variables.
+
+            Par exemple, 
+            
+            Interprétation : Entre -5 et 10°C, le temps de
+course moyen est de 14624 secondes soit
+4:03:44 heures. Entre 10 et 15°C, il est à 14 341
+secondes, soit 3:59:01. Entre 15 et 20°C, on
+enregistre 14 762 secondes, soit 4:06:02. Et à
+plus de 20°C, on est à 15 257 secondes, soit
+4:14:17.
+On observe que quand les températures
+dépassent 15°C le temps moyen est plus élevé.
+Les températures idéales pour un marathon
+sont celles froides, et plus particulièrement
+entre 10 et 15°C.
+                
+Test ANOVA : Pour étudier une variable
+catégorielle et une quantitative, on utilise le
+test ANOVA à un facteur, qui a pour but de
+comparer les moyennes d'échantillons.
+La p-valeur obtenue est <2e-16, ce qui signifie
+que le temps et la température sont très
+significativement liées.</p>
+
             
         </div>
         <!-- Autre contenu de la page d'accueil -->
